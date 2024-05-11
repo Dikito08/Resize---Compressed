@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Audio Compressor</title>
+    <link rel="shortcut icon" href="logo.png" />
+    <link rel="stylesheet" href="css/audio_style.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="index.html">Home</a>
+    </div>
+
+    <div class="container">
+      <h1>Audio Compressor</h1>
+      <input
+        type="file"
+        id="audioFile"
+        accept="audio/*"
+        onchange="displayAudio()"
+      />
+      <audio controls id="audioPlayer" style="display: none"></audio>
+      <button
+        id="compressButton"
+        style="display: none"
+        onclick="compressAudio()"
+      >
+        Compress
+      </button>
+      <button
+        id="downloadButton"
+        style="display: none"
+        onclick="downloadAudio()"
+      >
+        Download Compressed
+      </button>
+    </div>
+
+    <script src="js/audio_script.js"></script>
+  </body>
+</html>
